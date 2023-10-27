@@ -4,7 +4,7 @@
 
 :root {
     /* Browser default font-size is 16px, this way 1 rem = 10px */
-    font-size: 62.5%;
+    font-size: 100%;
     color-scheme: var(--color-scheme);
 }
 
@@ -12,13 +12,13 @@ html {
     font-family: "Times New Roman", "KaiTi";
     color: var(--fg);
     background-color: var(--bg);
-    text-size-adjust: none;
+    text-size-adjust: 2rem;
     -webkit-text-size-adjust: none;
 }
 
 body {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     overflow-x: hidden;
 }
 
