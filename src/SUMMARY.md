@@ -1,6 +1,3 @@
-# Summary
-
-This is Summary.
 
 ---
 
