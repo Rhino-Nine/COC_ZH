@@ -1,0 +1,10 @@
+[book]
+title = "克苏鲁神话"
+authors = ["H·P·洛夫克拉夫特等"]
+description = "克苏鲁神话中文合集"
+language = "zh"
+multilingual = false
+src = "src"
+
+[output.html]
+additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-admonish.css"]
