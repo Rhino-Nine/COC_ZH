@@ -5,11 +5,7 @@
 
 **本项目 fork 自 [coc-zh](https://github.com/jokester/coc-zh)** 
 
-由于 `Gitbook` 年久失修，在尝试维护`coc-zh`项目时出现难以解决的故障，故有以 `mdbook` 为核心的本项目。
-
-本项目使用`mdbook`将小说作品由`.md`转换为`.html`，然后借助`travis`自动构建，若构建正常，则自动发布到项目仓库的`Github Page`上以供浏览。
-
-编辑作品内容时只需编辑`src/HPL/FctionsName.md`即可。
+本项目使用`mdbook`代替原项目的`GitBook`，故维护作品内容时只需编辑`src/HPL/FctionsName.md`即可。
 
 
 # Built With
