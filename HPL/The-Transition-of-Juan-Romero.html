@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Transition of Juan Romero / 胡安·罗梅洛的变貌 - 克苏鲁神话</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="克苏鲁神话中文合集">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href=".././theme/catppuccin.css">
+        <link rel="stylesheet" href=".././theme/catppuccin-admonish.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../index.html">封面</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../SUMMARY.html">目录</a></li><li class="chapter-item expanded "><a href="../HPL/A-Reminiscence-of-Dr-Samuel-Johnson.html"><strong aria-hidden="true">1.</strong> A Reminiscence of Dr. Samuel Johnson / 回忆塞缪尔•约翰逊博士</a></li><li class="chapter-item expanded "><a href="../HPL/At-the-Mountains-of-Madness.html"><strong aria-hidden="true">2.</strong> At the Mountains of Madness / 疯狂山脉</a></li><li class="chapter-item expanded "><a href="../HPL/Azathoth.html"><strong aria-hidden="true">3.</strong> Azathoth / 阿撒托斯</a></li><li class="chapter-item expanded "><a href="../HPL/Beyond-The-Wall-of-Sleep.html"><strong aria-hidden="true">4.</strong> Beyond The Wall of Sleep / 翻越睡梦之墙</a></li><li class="chapter-item expanded "><a href="../HPL/Celepha-s.html"><strong aria-hidden="true">5.</strong> Celephaïs / 塞勒菲斯</a></li><li class="chapter-item expanded "><a href="../HPL/Cool-Air.html"><strong aria-hidden="true">6.</strong> Cool Air / 寒气</a></li><li class="chapter-item expanded "><a href="../HPL/Ex-Oblivione.html"><strong aria-hidden="true">7.</strong> Ex Oblivione / 来自遗忘</a></li><li class="chapter-item expanded "><a href="../HPL/Facts-Concerning-the-Late-Arthur-Jermyn-and-His-Family.html"><strong aria-hidden="true">8.</strong> Facts Concerning the Late Arthur Jermyn and His Family / 关于已故亚瑟·杰尔敏及其家系的事实</a></li><li class="chapter-item expanded "><a href="../HPL/From-Beyond.html"><strong aria-hidden="true">9.</strong> From Beyond / 自外而来</a></li><li class="chapter-item expanded "><a href="../HPL/He.html"><strong aria-hidden="true">10.</strong> He / 他</a></li><li class="chapter-item expanded "><a href="../HPL/Herbert-West-Reanimator.html"><strong aria-hidden="true">11.</strong> Herbert West—Reanimator / 赫伯特•韦斯特 — 尸体复生者</a></li><li class="chapter-item expanded "><a href="../HPL/History-of-the-Necronomicon.html"><strong aria-hidden="true">12.</strong> History of the Necronomicon / 《死灵之书》的历史</a></li><li class="chapter-item expanded "><a href="../HPL/Hypnos.html"><strong aria-hidden="true">13.</strong> Hypnos / 休普诺斯</a></li><li class="chapter-item expanded "><a href="../HPL/Ibid.html"><strong aria-hidden="true">14.</strong> Ibid / 伊比德</a></li><li class="chapter-item expanded "><a href="../HPL/In-the-Vault.html"><strong aria-hidden="true">15.</strong> In the Vault / 地窖中</a></li><li class="chapter-item expanded "><a href="../HPL/In-the-Walls-of-Eryx.html"><strong aria-hidden="true">16.</strong> In the Walls of Eryx / 厄瑞克斯之墙</a></li><li class="chapter-item expanded "><a href="../HPL/Medusa-s-Coil.html"><strong aria-hidden="true">17.</strong> Medusa’s Coil / 美杜莎的卷发</a></li><li class="chapter-item expanded "><a href="../HPL/Memory.html"><strong aria-hidden="true">18.</strong> Memory / 记忆</a></li><li class="chapter-item expanded "><a href="../HPL/Nyarlathotep.html"><strong aria-hidden="true">19.</strong> Nyarlathotep / 奈亚拉托提普</a></li><li class="chapter-item expanded "><a href="../HPL/Old-Bugs.html"><strong aria-hidden="true">20.</strong> Old Bugs / 老臭虫</a></li><li class="chapter-item expanded "><a href="../HPL/Out-of-the-Aeons.html"><strong aria-hidden="true">21.</strong> Out of the Aeons / 超越万古</a></li><li class="chapter-item expanded "><a href="../HPL/Pickman-s-Model.html"><strong aria-hidden="true">22.</strong> Pickman's Model / 皮克曼的模特</a></li><li class="chapter-item expanded "><a href="../HPL/Poetry-and-the-Gods.html"><strong aria-hidden="true">23.</strong> Poetry and the Gods / 诗与诸神</a></li><li class="chapter-item expanded "><a href="../HPL/Polaris.html"><strong aria-hidden="true">24.</strong> Polaris / 北极星</a></li><li class="chapter-item expanded "><a href="../HPL/The-Battle-that-Ended-the-Century.html"><strong aria-hidden="true">25.</strong> The Battle that Ended the Century / 新世纪前夜的决战</a></li><li class="chapter-item expanded "><a href="../HPL/The-Book.html"><strong aria-hidden="true">26.</strong> The Book / 书</a></li><li class="chapter-item expanded "><a href="../HPL/The-Call-of-Cthulhu-Frend.html"><strong aria-hidden="true">27.</strong> The Call of Cthulhu / 克苏鲁的呼唤</a></li><li class="chapter-item expanded "><a href="../HPL/The-Case-of-Charles-Dexter-Ward.html"><strong aria-hidden="true">28.</strong> The Case of Charles Dexter Ward / 查尔斯·迪克斯特·瓦德事件</a></li><li class="chapter-item expanded "><a href="../HPL/The-Challenge-from-Beyond.html"><strong aria-hidden="true">29.</strong> The Challenge from Beyond / 彼方的挑战</a></li><li class="chapter-item expanded "><a href="../HPL/The-Crawling-Chaos.html"><strong aria-hidden="true">30.</strong> The Crawling Chaos / 蠕行的混沌</a></li><li class="chapter-item expanded "><a href="../HPL/The-Curse-of-Yig.html"><strong aria-hidden="true">31.</strong> The Curse of Yig / 伊格的诅咒</a></li><li class="chapter-item expanded "><a href="../HPL/The-Diary-of-Alonzo-Typer.html"><strong aria-hidden="true">32.</strong> The Diary of Alonzo Typer / 阿隆佐·泰普尔的日记</a></li><li class="chapter-item expanded "><a href="../HPL/The-Disinterment.html"><strong aria-hidden="true">33.</strong> The Disinterment / 掘墓</a></li><li class="chapter-item expanded "><a href="../HPL/The-Doom-That-Came-to-Sarnath.html"><strong aria-hidden="true">34.</strong> The Doom That Came to Sarnath / 降临在萨尔纳斯的灾殃</a></li><li class="chapter-item expanded "><a href="../HPL/The-Dream-Quest-of-Unknown-Kadath.html"><strong aria-hidden="true">35.</strong> The Dream-Quest of Unknown Kadath / 梦寻秘境卡达斯</a></li><li class="chapter-item expanded "><a href="../HPL/The-Dreams-in-Witch-House.html"><strong aria-hidden="true">36.</strong> The Dreams in Witch-House / 魔女屋中之梦</a></li><li class="chapter-item expanded "><a href="../HPL/The-Dunwich-Horror.html"><strong aria-hidden="true">37.</strong> The Dunwich Horror / 敦威治恐怖事件</a></li><li class="chapter-item expanded "><a href="../HPL/The-Electric-Executioner.html"><strong aria-hidden="true">38.</strong> The Electric Executioner / 电刑器</a></li><li class="chapter-item expanded "><a href="../HPL/The-Evil-Clergyman.html"><strong aria-hidden="true">39.</strong> The Evil Clergyman / 邪恶的教士</a></li><li class="chapter-item expanded "><a href="../HPL/The-Festival.html"><strong aria-hidden="true">40.</strong> The Festival / 魔宴</a></li><li class="chapter-item expanded "><a href="../HPL/The-Green-Meadow.html"><strong aria-hidden="true">41.</strong> The Green Meadow / 绿色草原</a></li><li class="chapter-item expanded "><a href="../HPL/The-Haunter-of-the-Dark-Frend.html"><strong aria-hidden="true">42.</strong> The Haunter of the Dark / 夜魔</a></li><li class="chapter-item expanded "><a href="../HPL/The-Hoard-of-the-Wizard-Beast.html"><strong aria-hidden="true">43.</strong> The Hoard of the Wizard-Beast / 巫兽的宝藏</a></li><li class="chapter-item expanded "><a href="../HPL/The-Horror-at-Martin-s-Beach.html"><strong aria-hidden="true">44.</strong> The Horror at Martin's Beach / 马丁海滩的怪物</a></li><li class="chapter-item expanded "><a href="../HPL/The-Horror-at-Red-Hook.html"><strong aria-hidden="true">45.</strong> The Horror at Red Hook / 雷德胡克的恐怖</a></li><li class="chapter-item expanded "><a href="../HPL/The-Horror-in-the-Burying-Ground.html"><strong aria-hidden="true">46.</strong> The Horror in the Burying-Ground / 墓园里的恐怖</a></li><li class="chapter-item expanded "><a href="../HPL/The-Horror-in-the-Museum.html"><strong aria-hidden="true">47.</strong> The Horror in the Museum / 蜡像馆惊魂</a></li><li class="chapter-item expanded "><a href="../HPL/The-Last-Test.html"><strong aria-hidden="true">48.</strong> The Last Test / 最终测试</a></li><li class="chapter-item expanded "><a href="../HPL/The-Little-Glass-Bottle.html"><strong aria-hidden="true">49.</strong> The Little Glass Bottle / 小玻璃瓶</a></li><li class="chapter-item expanded "><a href="../HPL/The-Mound.html"><strong aria-hidden="true">50.</strong> The Mound / 丘</a></li><li class="chapter-item expanded "><a href="../HPL/The-Music-of-Erich-Zann.html"><strong aria-hidden="true">51.</strong> The Music of Erich Zann / 埃里奇·赞之曲</a></li><li class="chapter-item expanded "><a href="../HPL/The-Nameless-City.html"><strong aria-hidden="true">52.</strong> The Nameless City / 无名之城</a></li><li class="chapter-item expanded "><a href="../HPL/The-Other-Gods.html"><strong aria-hidden="true">53.</strong> The Other Gods / 蕃神</a></li><li class="chapter-item expanded "><a href="../HPL/The-Outsider.html"><strong aria-hidden="true">54.</strong> The Outsider / 异乡人</a></li><li class="chapter-item expanded "><a href="../HPL/The-Picture-in-the-House.html"><strong aria-hidden="true">55.</strong> The Picture in the House / 屋中画</a></li><li class="chapter-item expanded "><a href="../HPL/The-Quest-of-Iranon.html"><strong aria-hidden="true">56.</strong> The Quest of Iranon / 伊拉农的探求</a></li><li class="chapter-item expanded "><a href="../HPL/The-Rats-in-the-Walls.html"><strong aria-hidden="true">57.</strong> The Rats in the Walls / 墙中之鼠</a></li><li class="chapter-item expanded "><a href="../HPL/The-Shadow-Out-of-Time.html"><strong aria-hidden="true">58.</strong> The Shadow Out of Time / 超越时间之影</a></li><li class="chapter-item expanded "><a href="../HPL/The-Shadow-Over-Innsmouth.html"><strong aria-hidden="true">59.</strong> The Shadow Over Innsmouth / 印斯茅斯的阴霾</a></li><li class="chapter-item expanded "><a href="../HPL/The-Shunned-House.html"><strong aria-hidden="true">60.</strong> The Shunned House / 畏避之屋</a></li><li class="chapter-item expanded "><a href="../HPL/The-Silver-Key.html"><strong aria-hidden="true">61.</strong> The Silver Key / 银钥匙</a></li><li class="chapter-item expanded "><a href="../HPL/The-Slaying-of-the-Monster.html"><strong aria-hidden="true">62.</strong> The Slaying of the Monster / 诛杀怪物</a></li><li class="chapter-item expanded "><a href="../HPL/The-Statement-of-Randolph-Carter.html"><strong aria-hidden="true">63.</strong> The Statement of Randolph Carter / 伦道夫·卡特的供述</a></li><li class="chapter-item expanded "><a href="../HPL/The-Strange-High-House-in-the-Mist.html"><strong aria-hidden="true">64.</strong> The Strange High House in the Mist / 雾中怪屋</a></li><li class="chapter-item expanded "><a href="../HPL/The-Street.html"><strong aria-hidden="true">65.</strong> The Street / 道路</a></li><li class="chapter-item expanded "><a href="../HPL/The-Temple.html"><strong aria-hidden="true">66.</strong> The Temple / 神殿</a></li><li class="chapter-item expanded "><a href="../HPL/The-Terrible-Old-Man.html"><strong aria-hidden="true">67.</strong> The Terrible Old Man / 可怕的老人</a></li><li class="chapter-item expanded "><a href="../HPL/The-Thing-on-the-Doorstep.html"><strong aria-hidden="true">68.</strong> The Thing on the Doorstep / 门外之物</a></li><li class="chapter-item expanded "><a href="../HPL/The-Tomb.html"><strong aria-hidden="true">69.</strong> The Tomb / 坟墓</a></li><li class="chapter-item expanded "><a href="../HPL/The-Tomb.html"><strong aria-hidden="true">70.</strong> The Tomb / 坟墓</a></li><li class="chapter-item expanded "><a href="../HPL/The-Transition-of-Juan-Romero.html" class="active"><strong aria-hidden="true">71.</strong> The Transition of Juan Romero / 胡安·罗梅洛的变貌</a></li><li class="chapter-item expanded "><a href="../HPL/The-Tree.html"><strong aria-hidden="true">72.</strong> The Tree / 树</a></li><li class="chapter-item expanded "><a href="../HPL/The-Tree-on-the-Hill.html"><strong aria-hidden="true">73.</strong> The Tree on the Hill / 山上的树</a></li><li class="chapter-item expanded "><a href="../HPL/The-Unnamable.html"><strong aria-hidden="true">74.</strong> The Unnamable / 不可名状</a></li><li class="chapter-item expanded "><a href="../HPL/The-Very-Old-Folk.html"><strong aria-hidden="true">75.</strong> The Very Old Folk / 远古的民族</a></li><li class="chapter-item expanded "><a href="../HPL/The-Whisperer-in-Darkness.html"><strong aria-hidden="true">76.</strong> The Whisperer in Darkness / 暗夜呢喃</a></li><li class="chapter-item expanded "><a href="../HPL/The-White-Ship.html"><strong aria-hidden="true">77.</strong> The White Ship / 白船</a></li><li class="chapter-item expanded "><a href="../HPL/Through-The-Gates-of-Silver-Key.html"><strong aria-hidden="true">78.</strong> Through The Gates of Silver Key / 穿越银匙之门</a></li><li class="chapter-item expanded "><a href="../HPL/Till-A-the-Seas.html"><strong aria-hidden="true">79.</strong> Till A’ the Seas / 直至诸海</a></li><li class="chapter-item expanded "><a href="../HPL/Trap.html"><strong aria-hidden="true">80.</strong> Trap / 圈套</a></li><li class="chapter-item expanded "><a href="../HPL/Two-Black-Bottles.html"><strong aria-hidden="true">81.</strong> Two Black Bottles / 两只黑瓶</a></li><li class="chapter-item expanded "><a href="../HPL/What-the-Moon-Brings.html"><strong aria-hidden="true">82.</strong> What the Moon Brings / 月光下</a></li><li class="chapter-item expanded "><a href="../HPL/Winged-Death.html"><strong aria-hidden="true">83.</strong> Winged Death / 有翼死神</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="latte">Latte</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="frappe">Frappé</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="macchiato">Macchiato</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mocha">Mocha</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">克苏鲁神话</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="the-transition-of-juan-romero"><a class="header" href="#the-transition-of-juan-romero">The Transition of Juan Romero</a></h2>
+<h2 id="胡安罗梅洛的变貌"><a class="header" href="#胡安罗梅洛的变貌">胡安·罗梅洛的变貌</a></h2>
+<h4 id="原著hp洛夫克拉夫特"><a class="header" href="#原著hp洛夫克拉夫特">原著：H·P·洛夫克拉夫特</a></h4>
+<h4 id="译者玖羽"><a class="header" href="#译者玖羽">译者：玖羽</a></h4>
+<h4 id="原文the-transition-of-juan-romero"><a class="header" href="#原文the-transition-of-juan-romero">原文：<a href="http://www.hplovecraft.com/writings/texts/fiction/tjr.asp">The Transition of Juan Romero</a></a></h4>
+<hr />
+<p>关于 1894 年 10 月 18 至 19 日在诺顿 (Norton) 矿山发生的事件，我不想细说。促使我在风烛残年之际将那些可怕的景象和事件回忆起来的，乃是对科学的责任感；那些事情我根本无法解释，所以就更加恐怖。但我觉得，应该在死之前把自己所知的一切都讲出来——那就是在胡安·罗梅洛(Juan Romero)身上发生的……可以称为“变貌”(transition)吧……</p>
+<p>我的姓名和出身不需要流传于后世。实际上，当一个人突然移居到合众国或大英帝国的殖民地时，他就已经放弃自己的过去了，所以还是不要提为好。至于过去我是一个怎样的人——也许和主题没有任何关系，但我要说，在印度服役的时候，比起同僚的军官来，我更愿意和那些白胡子的当地长者待在一起。我在探究怪异的东方传说时，深入得不是一点两点，因此遭到了灾难，只好来到广阔的美国西部，开始新的人生；此时我觉得最好更名改姓，于是就给自己取了现在这个没有任何含义的名字。</p>
+<p>1894 年的夏秋两季，我搬到仙人掌山脉 (Cactus Mountains) 那荒凉而辽阔的土地居住，以一名普通矿工的身份被闻名遐迩的诺顿矿山雇用。这座矿山在数年前被一位老勘探者发现，随着它的发现，这片几乎空无一人的荒野顿时变成了沸腾着欲望的大锅。在山中湖泊下深深隐藏的产金洞窟使年迈的发现者一跃成为他做梦也想不到的大富翁，洞窟经过转手倒卖，现已成为最后将它买下的公司进行广泛采掘的根据地。新的洞窟又被发现了几个，它们出产的黄金数量极多；健壮的矿工组成混杂的大军，不分昼夜地在坑道和岩洞里劳劳碌碌。矿场的主管亚瑟(Arthur)经常谈论这里罕见的地质结构，他通过考察这一连串洞窟的覆盖范围，认定这里将变成一个无比巨大的金矿，同时判断，所有产金的洞窟都已被水侵蚀，很快就能把它们全部挖开。</p>
+<p>我被雇用后不久，胡安·罗梅洛也来到了诺顿矿山。他本来不过是从附近蜂拥而来的粗野的墨西哥人中的一员，人们开始注意他，是因为他的容貌。他的血统无疑是红种印第安人，但皮肤颜色之淡和面容之端整都足以令人惊讶，和普通的“老墨”或本地的派尤特 (Piute) 族长得一点也不像。更奇怪的是，尽管长相和西班牙裔或印第安部落民完全不同，可他也不像有白种人的血统——既非从卡斯蒂利亚来的征服者也非美国的开拓者。沉默寡言的罗梅洛每天早起之后，都会陶醉地凝望在东边山峰上露出脸颊的朝阳，就像在执行什么连他自己也不了解的仪式，把双臂伸向太阳；这样的行为倒会使人发挥想像力，想到古老而高贵的阿兹特克人。不过，除了面孔之外，罗梅洛却完全与“高贵”无缘，他无知而肮脏，和那些褐肤的墨西哥人住在一起，后来我也听说，他出身赤贫。据说，童年的他是一场传播广泛的流行病的唯一幸存者，被人在一间简陋的山间小屋里发现，那小屋靠近一道极其不同寻常的岩石裂缝，在他身边还躺着两具刚被秃鹫啄干净的人类骷髅，那应该就是他的双亲。没人还记得他的家人，他们很快就被遗忘了；事实上，那之后发生了一次雪崩，摧毁了用风干土坯砌成的小屋，也堵塞了岩石的裂缝，就连生养他的地方也已从记忆中抹去。他被一个墨西哥窃牛贼养大，那人给他取了名字，现在罗梅洛已和他的同伴几乎没有区别。</p>
+<p>罗梅洛对我的忠诚，无疑始于我在不劳动的时候戴着的那枚奇特而古老的印度指环。至于这指环的来历，我就不能说了，它是我和自己那永远锁闭的前半生的最后联系，我对它极其珍视。那墨西哥人带着好奇的表情对它产生了兴趣，但在他的眼里却看不到半点贪婪之意。古代的象形文字似乎在他未受教育但异常活跃的头脑中引发了某些模糊的回忆，尽管他以前决未见过这类物事。罗梅洛出现在矿山后，只过了数周，他就好像变成了我忠实的仆人，可被当作主人的我也不过是一名普通矿工罢了。出于理所当然的事实，我们的交谈极为有限：罗梅洛只懂一点点英语，我也发现，自己在牛津大学学到的西班牙语与新西班牙的劳工所操的方言完全不同。</p>
+<p>在我讲述的事情发生之前，我们没有任何不祥的预感。罗梅洛对我产生兴趣、对我的指环产生古怪的反应，但在大爆炸发生时，我们完全没料到接下来会发生什么——通过研究地层，人们断定矿脉一直向下延伸到极深的地方，主管认为那里全是坚硬的岩石，放置了大量炸药。我和罗梅洛都没有参与这次作业，我们是通过旁人的讲述才得知发生的异事的。炸药似乎放得太多，整座山都在摇晃，山坡上的棚屋窗户全被震碎，附近坑道里的矿工都被震倒在地，位于爆破点正上方的宝石湖 (Jewel Lake) 的湖水也像遭遇风暴一般起了巨浪。通过调查，人们发现一个不见底的深渊张着大嘴出现在爆破点下方，这深渊异常之深，手头的任何一条绳索也探不到底，任何一盏灯也照不出亮。困惑的挖掘者们找主管谈了这件事，主管命令，拿许多极长的绳索头尾相接，系在一起放进去，直到碰到洞底为止。</p>
+<p>很快，脸色惨白的工人们向主管报告了他们的失败，他们彬彬有礼但却坚定不移地拒绝再到龟裂那里去，甚至拒绝在龟裂被封上前再在矿山里工作。他们已经直面了超出自己经验的事情，所以他们能够确定，这个空洞是无底的。主管并未责备他们，反而陷入深思，并为第二天制订了许多计划。那天晚上矿山没有开工。</p>
+<p>半夜两点时分，一匹孤单的郊狼开始低嚎，在矿区某处，一只狗也吠叫起来，仿佛是在答复。山脉之顶的风暴开始变强，半月①的光辉透过层叠的卷层云射来，在照耀夜空的微光中，那异形的云彩开始以可怕的速度流动。把我叫醒的，是罗梅洛从上铺发出的声音；他的声音激动而紧张，还包含着某种我无法理解的期望：</p>
+<p>“圣母啊！那声……那声音！您听着了吗？听着了吗？先生②，那声音！”</p>
+<p>我侧耳静听，想知道他指的是什么声音。郊狼、狗、风。我能听到的只有这些。风暴愈发强烈，风疯狂地尖叫，透过工棚的窗户，能看到闪电不断劈打。于是我便拿自己听到的声音去问那神经紧张的墨西哥人：</p>
+<p>“是郊狼吗？是狗吗？是风吗？③”</p>
+<p>罗梅洛没有回答。过了一会，他用敬畏的口吻低声说：</p>
+<p>“那是韵律，先生……那是大地的韵律④……那是地面之下的鼓动！”</p>
+<p>这时我也听见了。我只是听到声音就全身发抖，连自己也不知道为什么。声音正从我脚下极深的地方传出——这就是罗梅洛所说的宛如鼓动的韵律，虽然非常微弱，但那声音却比狗叫、狼嚎以及猛吹烈打的风暴都强。这种韵律无法用笔舌形容，硬要说的话，大概类似在巨型邮轮的甲板上感到的引擎的震动，但它不是那种机械的震动，不是那种无生命、无意识的震动。在它所有的特性中，令我印象最深的还是它从地底深处传出的这一点；我脑中顿时出现了由坡 (Edgar Allan Poe) 所引用、出自约瑟夫·格兰威尔(Joseph Glanvill)笔下的一句话，这句话在那篇文章中非常出彩：</p>
+<p>——神的伟业辽阔无垠，奥妙而不可理解，</p>
+<p>其深邃远胜德谟克利特 (Democritus) 之井⑤——</p>
+<p>罗梅洛突然一跃下床，站在我面前，看着我的指环——每当闪电劈下，它都会发出奇妙的光。之后，他朝矿井的方向凝望；我也起床站稳，两人呆立一会，专心致志地倾听那离奇的韵律，现在它的生命感已经越来越强。我们不知不觉地走近门边，直到听见门被强风吹得嘎啦嘎啦响，才找回一点令人宽慰的尘世实感。从地下深处传来的咏唱——现在听起来就像咏唱——已经变得高亢而清晰，我们难以自制，只觉得必须在风暴中出门，投入矿坑的黑暗之中。</p>
+<p>我们在路上没遇到半个人，因为夜班矿工都从工作中解放出来了，不祥的谣言似乎也已传入干峡谷 (Dry Gulch) 定居点那些昏昏欲睡的酒吧侍者耳中。只有微弱的正方形黄光从警卫的小屋里射出，就像一只监视的眼睛；我模糊地想到，不知这韵律会对警卫造成什么影响，可这时罗梅洛已经迅速前行，我也只好加快脚步跟随。</p>
+<p>当走下巷道之后，我才听清，从地底传来的声音原来是由许多声音混合而成的，其中既有鼓的敲打，也有许多声音的咏唱，和我所知的某种东方仪式有可怕的相似之处——前面也说过，我曾在印度待过很久。罗梅洛和我毫不犹豫地穿过水平巷道，爬下梯子；尽管一直向引诱我们的目标前进，可我却感到一种可怜而无力的恐惧和抗拒。有那么一会儿，我趁着精神不是太狂乱，就想，我们明明没拿灯或蜡烛，为什么巷道里还这么明亮呢？这时我才发现，我手上的那枚古老指环正放出怪诞的光，这苍白的光辉扩散开来，闪耀在潮湿而沉闷的空气之中。</p>
+<p>罗梅洛根本不理会我的警告，他在许多简陋的梯子中找了一把爬下，飞快地向前跑去，把我抛在后面。我微微地听到，鼓声和咏唱声带上了新的狂野曲调，这对他造成了惊人的影响，只听罗梅洛狂呼一声，就一头扎进了没有任何标记引导的洞窟的黑暗。我听见他在我前面喊了好几声，同时还在平直的巷道里绊倒了数次，疯狂地弄倒了那些快要散架的梯子。此时我感到一阵恐惧，因为我清楚地听到了他喊叫的内容，我还保有足够的理性，可以判断出，他喊的词语于我是一无所知。罗梅洛平时所操的拙劣的西班牙语和更拙劣的英语已被一个刺耳但令人印象深刻的多音节词取代——被他反复呼喊、但我只能勉强听到的，只有“维齐洛波奇特利 (Huitzilopochtli) ”⑥一语。后来，我从一位伟大的历史学家的著作⑦中发现了这个词，并为它包含的意义颤抖不已。</p>
+<p>那个可怕夜晚的高潮十分短暂，由许多片断混合而成，正好始于我到达最后一个洞窟的时候。从面前的黑暗里传来了墨西哥人垂死的惨叫，我今生恐怕再也不会听到如那般尖厉的声音。在这一瞬间，隐藏在大地之中的一切恐怖和怪异全部显现，仿佛要彻底压倒人类这个种族；与此同时，我的指环也熄灭了光辉，在仅有数码之远的下方，我看到新的光芒浮现出来。我已经抵达了深渊，而我也明白，那炽燃的红色光芒已经吞下了不幸的罗梅洛。面前这任何一根绳索也探不到底的深渊，现在已经变成了闪耀摇荡火焰、响彻刺耳喧嚣的魔窟。我走到深渊边缘，向里面看去：起初只能看到沸腾着的模糊光体，渐渐地，在无限遥远之处，一个东西开始从光体中分离出来。于是我看到了——那是胡安·罗梅洛吗？——可是，神啊！他变成了怎样的容貌啊！我不知道该怎么描述……这时上天向我伸出援手，我仿佛听到了两个宇宙互相撞击的声音。在巨大的轰音中，我眼前所见和耳中所听的东西尽皆消失，留给我的只有混沌；我在遗忘中得到了安宁。</p>
+<p>我的遭遇实在太过异常，我不知道该怎么写下去，所以只能尽力而为，不再去费心地区分暧昧不明的“真相”和“外在”。醒来的时候，我毫发无伤地躺在床上，看见了窗外的曙光；在离我不远的桌子上放着胡安·罗梅洛的尸首，一群人围着他，其中包括矿山的医生。人们说，这墨西哥人在熟睡的时候莫名其妙地死掉了，他们觉得这应该和震撼山峰的落雷有某种联系。他的死亡无法解释，即使验尸也找不出死因。据我听到的只言片语说，那天晚上，罗梅洛和我根本没有离开工棚，当风暴在仙人掌山脉一带肆虐的时候，我们都在睡觉。有一些胆大的人曾去矿井查看，他们回报说，风暴引起了大规模的塌陷，昨日引起莫大不安的无底深渊已被完全埋没。我问警卫在惊人的落雷之前听到了什么，可他只提到郊狼、狗和咆哮的山风——就这些。我没有怀疑他的话。</p>
+<p>作业重新开始后，主管亚瑟找来一帮特别可靠的人，让他们调查深渊被埋没的地方；他们不情不愿地服从了，在那里挖了一个深坑。结果非常奇怪：在打开的时候，空洞的天顶看起来并不厚，可现在就算用钻头来钻，也只能钻出无尽的岩石。调查者什么也没有发现，金子就更不用提了，最后主管放弃了尝试，但当他坐在书桌前思考时，还是会偶尔露出困惑的神情。</p>
+<p>还有一件不可思议的事。在风暴过后的那个早晨，我醒来后不久，就发现那枚印度指环莫名其妙地不见了踪影。尽管我曾很珍重地保存它，可它的失踪却让我感到安心。如果是某位矿工偷的，那他一定很巧妙地处理了这件赃物，因为我就算登广告、找警察，也都没有找到。我在印度学到了很多奇情怪事，所以我隐约觉得，这指环可能不是被人类偷走的。</p>
+<p>我对上述全部体验的想法会随着时间而变化。在一年到头的差不多所有日子、以及所有白天里，我都觉得，这其中的大部分都只是我做的梦，唯有在秋季的凌晨两点左右，当风和动物的低嚎响起，我听到从深得不可思议的地下传来的、不祥而有韵律的鼓动声时，心里才会想，胡安·罗梅洛的变貌实在是极为恐怖。</p>
+<h3 id="the-end"><a class="header" href="#the-end">The End</a></h3>
+<hr />
+<h4 id="译注"><a class="header" href="#译注">译注：</a></h4>
+<p>①：此处有误。根据 1894 年 10 月的月相，半月应该出现在差两点半夜时。</p>
+<p>②③④：原文皆为西班牙语。</p>
+<p>⑤：出自《莫斯肯漩涡沉浮记》 (A Descent into the Maelstrom) 。</p>
+<p>⑥：阿兹特克人的主神、太阳神、战神。</p>
+<p>⑦：普雷斯科特 (William Prescott) 的《墨西哥征服史》(History of the Conquest of Mexico)。</p>
+<hr />
+<h4 id="说明"><a class="header" href="#说明">说明：</a></h4>
+<p>这篇小说属于洛夫克拉夫特的早期作品，不成熟之处显而易见，当时作者的世界观和设定都很不完善，不过最核心的部分已经在本篇中体现出来了，那就是：世界的本质是深邃而不可理解的。洛夫克拉夫特一直拒绝将它出版，甚至不愿在同人志上刊登，直到 1932 年才在罗伯特·巴洛的劝说下将它公之于众，而出版更要等到他去世之后了 （巧合的是，巴洛后来成了研究阿兹特克文化的学者） 。</p>
+<p>文中的描写让人联想到《丘》里的昆扬，这两篇文章的构思想必有一定联系。</p>
+<p><img src="style_emoticons/default/sleep.gif" alt="sleep.gif" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../HPL/The-Tomb.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../HPL/The-Tree.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../HPL/The-Tomb.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../HPL/The-Tree.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
